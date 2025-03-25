@@ -3,16 +3,44 @@ html{
 }
 
 .header {
-    height: 70px;
-    background-color: dodgerblue;
+    height: auto;
     position: sticky;
     top: 0;
-
+    background-color: blueviolet;
+    text-align: center;
 }
 
+#botao-menu {
+    display: none;
+}
+
+label[for='botao-menu'] {
+    background-color: blueviolet;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
 .header__nav {
+    border-top: 1px solid white;
     display: flex;
-    
+}
+
+.header__nav a {
+    min-height: 30px;
+    text-decoration: none;
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.header__nav a:hover {
+    background-color: rgb(101, 3, 192);
 }
 
 .main__section {
@@ -25,7 +53,7 @@ html{
 }
 
 #main__section__prof div {
-    border: 1px solid black;
+
 }
 
 .main__section h2 {
@@ -51,4 +79,29 @@ html{
     text-align: center;
     background-color: brown;
     color: white;
+    padding: 10px;
+}
+
+.prof__card__text p {
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .header__nav {
+        flex-direction: column;
+        border-bottom: 1px solid white;
+        display: none;
+    }
+
+    .header__nav a {
+        border-bottom: 1px solid white;
+    }
+
+    label[for='botao-menu'] {
+        display: block;
+    }
+
+    #botao-menu:checked ~ .header__nav {
+        display: block;
+    }
 }
