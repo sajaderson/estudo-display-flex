@@ -1,0 +1,91 @@
+:root {
+    --backgroundNav: #333;
+    --details: white;
+    --backgroundSite: #f1f1f1;
+    --fakeImage: #aaa;
+}
+
+* {
+    /* padding: 0;
+    margin: 0; */
+}
+
+body {
+    background-color: var(--backgroundSite);
+    padding: 20px;
+}
+
+/* Configurações do Header */
+.header {
+    height: 200px;
+    background-color: var(--details);
+}
+
+/* Configurações de Navegação */
+.nav {
+    height: 50px;
+    background-color: var(--backgroundNav);
+    margin-bottom: 20px;
+}
+
+/* Configuração do Layout - container */
+.container {
+    display: flex;
+}
+
+.main {
+    width: 80%;
+}
+
+.section {
+    background-color: var(--details);
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+.section__figure {
+    background-color: var(--fakeImage);
+    height: 200px;
+    margin: 0;
+    padding: 20px;
+}
+
+.aside {
+    width: 20%;
+    margin-left: 20px;
+}
+
+.article {
+    background-color: var(--details);
+    margin-bottom: 20px;
+}
+
+
+/* Configurações Contato */
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.col--20 {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.col--80 {
+    width: 80%;
+    text-align: right;
+}
+
+.col--80 input, textarea {
+    width: 90%;
+    border-radius: 5px;
+    height: 20px;
+    padding: 10px;
+}
+
+.col--80 textarea {
+    height: 200px;
+}
